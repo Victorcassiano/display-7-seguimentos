@@ -25,8 +25,8 @@ architecture decodificador of display8 is
 	signal S : STD_LOGIC_VECTOR(0 to 6);
 begin
 	with DADO select
-	S <=    "0000001"  when "0000",	-- '0'
-		    "1001111"  when "0001",	-- '1'
+	S <=            "0000001"  when "0000",	-- '0'
+		        "1001111"  when "0001",	-- '1'
 			"0010010"  when "0010",	-- '2'
 			"0000110"  when "0011",	-- '3'
 			"1001100"  when "0100",	-- '4'
